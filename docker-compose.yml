@@ -7,7 +7,7 @@ services:
     ports:
     - "80:80"
     volumes:
-    - ./sample-app/public:/srv/www/sample-app/public:cached
+    - ./sample-app/public:/srv/www/sample-app/public
     restart: always
     tty: true
     read_only: false
@@ -22,7 +22,7 @@ services:
       - mail
       - samples3
     volumes:
-    - ./sample-app:/srv/www/sample-app:cached
+    - ./sample-app:/srv/www/sample-app
     restart: always
     tty: true
     read_only: false
